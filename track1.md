@@ -6,41 +6,35 @@ In a professional setting at TruSource, we wouldn't start with a clean CSV. The 
 
 If I were building the TruSource data pipeline, I would expect to integrate these five source tables:
 
-Source Table
-
-What one row represents
-
-Importance for Churn Prediction
-
 Customer Master
 
-One unique customer
+What one row represents: One unique customer.
 
-Provides static demographics (Age, Gender, Marital Status).
+Importance: Provides static demographics such as Age, Gender, and Marital Status.
 
 Billing & Transactions
 
-One monthly invoice
+What one row represents: One monthly invoice or transaction.
 
-Captures financial health, total_billed, and pay_method history.
+Importance: Captures financial health, total_billed, and pay_method history.
 
 Service Inventory
 
-One active plan/add-on
+What one row represents: One active plan, contract, or add-on.
 
-Tracks the contract_term, internet_plan, and add_on_security features.
+Importance: Tracks the contract_term, internet_plan, and add_on_security features.
 
 Usage Metrics (CDR)
 
-One daily usage summary
+What one row represents: One daily or monthly usage summary.
 
-The "behavioral heart": avg_gb_download and long_dist_fees_total.
+Importance: The "behavioral heart" of the model: avg_gb_download and long_dist_fees_total.
 
 CRM / Support Tickets
 
-One customer interaction
+What one row represents: One customer interaction or support case.
 
-Captures "frustration signals" like technical support calls or refund requests.
+Importance: Captures "frustration signals" like technical support calls or refund requests.
 
 2. Connecting the Data (Keys)
 
